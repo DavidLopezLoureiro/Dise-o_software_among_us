@@ -1,5 +1,5 @@
 /* DELETE 'productsDB1' database*/
-DROP SCHEMA productsDB1;
+DROP SCHEMA Easybooking;
 /* DELETE USER 'products_user1' AT LOCAL SERVER*/
 DROP USER 'products_user1'@'%';
 
