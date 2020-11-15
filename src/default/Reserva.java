@@ -1,4 +1,6 @@
+import javax.jdo.annotations.PersistenceCapable;
 
+@PersistenceCapable
 public class Reserva {
 	
 	private Usuario usuario;
