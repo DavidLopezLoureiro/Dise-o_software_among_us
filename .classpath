@@ -7,5 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src/default"/>
 	<classpathentry kind="lib" path="/2.3_exampleJDO/lib/javax.jdo-3.2.0-m13.jar"/>
+	<classpathentry kind="lib" path="lib/javax.jdo-3.2.0-m13.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
