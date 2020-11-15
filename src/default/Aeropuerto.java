@@ -1,4 +1,6 @@
+import javax.jdo.annotations.PersistenceCapable;
 
+@PersistenceCapable
 public class Aeropuerto {
 	private String nombre;
 	private String codigo;
