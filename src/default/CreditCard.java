@@ -1,4 +1,6 @@
+import javax.jdo.annotations.PersistenceCapable;
 
+@PersistenceCapable
 public class CreditCard extends Metodo_De_Pago {
 
 	private int numero_de_targeta;
