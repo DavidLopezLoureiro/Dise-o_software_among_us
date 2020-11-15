@@ -1,4 +1,6 @@
+import javax.jdo.annotations.PersistenceCapable;
 
+@PersistenceCapable
 public class PayPal extends Metodo_De_Pago{
 	private String nombre_de_usuario;
 	
