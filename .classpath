@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src/default"/>
+	<classpathentry kind="lib" path="/2.3_exampleJDO/lib/javax.jdo-3.2.0-m13.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
