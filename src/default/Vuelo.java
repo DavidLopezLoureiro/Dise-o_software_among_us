@@ -1,4 +1,6 @@
+import javax.jdo.annotations.PersistenceCapable;
 
+@PersistenceCapable
 public class Vuelo {
 	private String codigo_de_vuelo;
 	private int fecha_y_hora_de_salida;
