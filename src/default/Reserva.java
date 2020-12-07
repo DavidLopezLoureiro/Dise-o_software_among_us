@@ -1,24 +1,39 @@
+package EasyBooking;
 import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable
 public class Reserva {
 	
 	private Usuario usuario;
-	private int numero_de_asientos;
-	private String nombre_de_los_pasajeros[];
+	private int numeroDeAsientos;
+	private String nombreDeLosPasajeros[];
 	private float precio;
 	private int fecha;
 	private Vuelo vuelo;
+	private Pago pago;
 	
 	
-	public Reserva(Usuario usuario, int numero_de_asientos, String[] nombre_de_los_pasajeros, float precio, int fecha, Vuelo vuelo) {
+	public Reserva(Usuario usuario, int numeroDeAsientos, String[] nombreDeLosPasajeros, float precio, int fecha, Vuelo vuelo, Pago pago) {
 		super();
 		this.usuario = usuario;
-		this.numero_de_asientos = numero_de_asientos;
-		this.nombre_de_los_pasajeros = nombre_de_los_pasajeros;
+		this.numeroDeAsientos = numeroDeAsientos;
+		this.nombreDeLosPasajeros = nombreDeLosPasajeros;
 		this.precio = precio;
 		this.fecha = fecha;
 		this.vuelo = vuelo;
+		this.pago = pago;
+	}
+	
+	public Pago getPago() {
+		return pago;
+	}
+
+	public void setPago(Pago pago) {
+		this.pago = pago;
+	}
+
+	public Reserva() {
+		super();
 	}
 
 
@@ -32,23 +47,23 @@ public class Reserva {
 	}
 
 
-	public int getNumero_de_asientos() {
-		return numero_de_asientos;
+	public int getnumeroDeAsientos() {
+		return numeroDeAsientos;
 	}
 
 
-	public void setNumero_de_asientos(int numero_de_asientos) {
-		this.numero_de_asientos = numero_de_asientos;
+	public void setnumeroDeAsientos(int numeroDeAsientos) {
+		this.numeroDeAsientos = numeroDeAsientos;
 	}
 
 
-	public String[] getNombre_de_los_pasajeros() {
-		return nombre_de_los_pasajeros;
+	public String[] getnombreDeLosPasajeros() {
+		return nombreDeLosPasajeros;
 	}
 
 
-	public void setNombre_de_los_pasajeros(String[] nombre_de_los_pasajeros) {
-		this.nombre_de_los_pasajeros = nombre_de_los_pasajeros;
+	public void setnombreDeLosPasajeros(String[] nombreDeLosPasajeros) {
+		this.nombreDeLosPasajeros = nombreDeLosPasajeros;
 	}
 
 
