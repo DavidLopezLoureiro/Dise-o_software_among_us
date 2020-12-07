@@ -1,12 +1,27 @@
+package EasyBooking;
 import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable
 public class Pago {
 	private int fecha;
+	private Metodo_De_Pago metodoDePago;
 
-	public Pago(int fecha) {
+	public Pago(int fecha, Metodo_De_Pago metodoDePago) {
 		super();
 		this.fecha = fecha;
+		this.metodoDePago = metodoDePago;
+	}
+	
+	public Metodo_De_Pago getMetodoDePago() {
+		return metodoDePago;
+	}
+
+	public void setMetodoDePago(Metodo_De_Pago metodoDePago) {
+		this.metodoDePago = metodoDePago;
+	}
+
+	public Pago() {
+		super();
 	}
 
 	public int getFecha() {
