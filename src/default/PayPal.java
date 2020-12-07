@@ -1,23 +1,31 @@
+package EasyBooking;
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Inheritance;
+import javax.jdo.annotations.InheritanceStrategy;
 
-@PersistenceCapable
+@PersistenceCapable(detachable = "true")
+@Inheritance(strategy = InheritanceStrategy.NEW_TABLE)
 public class PayPal extends Metodo_De_Pago{
-	private String nombre_de_usuario;
+	private String nombreDeUsuario;
 	
 	
-	public PayPal(String nombre_de_usuario) {
+	public PayPal(String nombreDeUsuario) {
 		super();
-		this.nombre_de_usuario = nombre_de_usuario;
+		this.nombreDeUsuario = nombreDeUsuario;
+	}
+	
+	public PayPal() {
+		super();
+		
+	}
+
+	public String getnombreDeUsuario() {
+		return nombreDeUsuario;
 	}
 
 
-	public String getNombre_de_usuario() {
-		return nombre_de_usuario;
-	}
-
-
-	public void setNombre_de_usuario(String nombre_de_usuario) {
-		this.nombre_de_usuario = nombre_de_usuario;
+	public void setnombreDeUsuario(String nombreDeUsuario) {
+		this.nombreDeUsuario = nombreDeUsuario;
 	}
 	
 	
