@@ -1,3 +1,4 @@
+package EasyBooking;
 import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable
@@ -10,6 +11,11 @@ public class Aeropuerto {
 		super();
 		this.nombre = nombre;
 		this.codigo = codigo;
+	}
+	
+	public Aeropuerto() {
+		super();
+
 	}
 
 
