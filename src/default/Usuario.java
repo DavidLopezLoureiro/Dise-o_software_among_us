@@ -1,20 +1,25 @@
+package EasyBooking;
 import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable
 public class Usuario {
 
 	private String email;
-	private String red_social;
+	private String redSocial;
 	private Aeropuerto habitual;
 	private Metodo_De_Pago metodo;
 	
 
-	public Usuario(String email, String red_social, Aeropuerto habitual, Metodo_De_Pago metodo){
+	public Usuario(String email, String redSocial, Aeropuerto habitual, Metodo_De_Pago metodo){
 		super();
 		this.email = email;
-		this.red_social = red_social;
+		this.redSocial = redSocial;
 		this.habitual = habitual;
 		this.metodo = metodo;
+	}
+	
+	public Usuario(){
+		super();
 	}
 
 
@@ -29,12 +34,12 @@ public class Usuario {
 
 
 	public String getRed_social() {
-		return red_social;
+		return redSocial;
 	}
 
 
-	public void setRed_social(String red_social) {
-		this.red_social = red_social;
+	public void setredSocial(String redSocial) {
+		this.redSocial = redSocial;
 	}
 
 
