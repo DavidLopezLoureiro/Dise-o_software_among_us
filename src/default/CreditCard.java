@@ -1,48 +1,56 @@
+package EasyBooking;
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Inheritance;
+import javax.jdo.annotations.InheritanceStrategy;
 
-@PersistenceCapable
+@PersistenceCapable(detachable = "true")
+@Inheritance(strategy = InheritanceStrategy.NEW_TABLE)
 public class CreditCard extends Metodo_De_Pago {
 
-	private int numero_de_targeta;
-	private String nombre_del_titular;
-	private int fecha_de_expiracion;
+	private int numeroDeTargeta;
+	private String nombreDelTitular;
+	private int fechaDeExpiracion;
 	
 	
-	public CreditCard(int numero_de_targeta, String nombre_del_titular, int fecha_de_expiracion) {
+	public CreditCard(int numeroDeTargeta, String nombreDelTitular, int fechaDeExpiracion) {
 		super();
-		this.numero_de_targeta = numero_de_targeta;
-		this.nombre_del_titular = nombre_del_titular;
-		this.fecha_de_expiracion = fecha_de_expiracion;
+		this.numeroDeTargeta = numeroDeTargeta;
+		this.nombreDelTitular = nombreDelTitular;
+		this.fechaDeExpiracion = fechaDeExpiracion;
+	}
+	
+	public CreditCard() {
+		super();
 	}
 
 
-	public int getNumero_de_targeta() {
-		return numero_de_targeta;
+	public int getnumeroDeTargeta() {
+		return numeroDeTargeta;
 	}
 
 
-	public void setNumero_de_targeta(int numero_de_targeta) {
-		this.numero_de_targeta = numero_de_targeta;
+	public void setnumeroDeTargeta(int numeroDeTargeta) {
+		this.numeroDeTargeta = numeroDeTargeta;
 	}
 
 
-	public String getNombre_del_titular() {
-		return nombre_del_titular;
+	public String getnombreDelTitular() {
+		return nombreDelTitular;
 	}
 
 
-	public void setNombre_del_titular(String nombre_del_titular) {
-		this.nombre_del_titular = nombre_del_titular;
+	public void setnombreDelTitular(String nombreDelTitular) {
+		this.nombreDelTitular = nombreDelTitular;
 	}
 
 
-	public int getFecha_de_expiracion() {
-		return fecha_de_expiracion;
+	public int getfechaDeExpiracion() {
+		return fechaDeExpiracion;
 	}
 
 
-	public void setFecha_de_expiracion(int fecha_de_expiracion) {
-		this.fecha_de_expiracion = fecha_de_expiracion;
+	public void setfechaDeExpiracion(int fechaDeExpiracion) {
+		this.fechaDeExpiracion = fechaDeExpiracion;
 	}
 	
 	
