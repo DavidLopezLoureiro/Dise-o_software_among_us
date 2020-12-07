@@ -1,78 +1,82 @@
+package EasyBooking;
 import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable
 public class Vuelo {
-	private String codigo_de_vuelo;
-	private int fecha_y_hora_de_salida;
-	private int fecha_y_hora_de_llegada;
-	private int asientos_totales;
-	private int asientos_libres;
+	private String codigoDeVuelo;
+	private int fechaYHoraDeSalida;
+	private int fechaYHoraDeLlegada;
+	private int asientosTotales;
+	private int asientosLibres;
 	private Aerolinea aerolinea;
 	private Aeropuerto salida; 
 	private Aeropuerto llegada;
 	
 	
-	public Vuelo(String codigo_de_vuelo, int fecha_y_hora_de_salida, int fecha_y_hora_de_llegada, int asientos_totales,
-			int asientos_libres, Aerolinea aerolinea, Aeropuerto salida, Aeropuerto llegada) {
+	public Vuelo(String codigoDeVuelo, int fechaYHoraDeSalida, int fechaYHoraDeLlegada, int asientosTotales,
+			int asientosLibres, Aerolinea aerolinea, Aeropuerto salida, Aeropuerto llegada) {
 		super();
-		this.codigo_de_vuelo = codigo_de_vuelo;
-		this.fecha_y_hora_de_salida = fecha_y_hora_de_salida;
-		this.fecha_y_hora_de_llegada = fecha_y_hora_de_llegada;
-		this.asientos_totales = asientos_totales;
-		this.asientos_libres = asientos_libres;
+		this.codigoDeVuelo = codigoDeVuelo;
+		this.fechaYHoraDeSalida = fechaYHoraDeSalida;
+		this.fechaYHoraDeLlegada = fechaYHoraDeLlegada;
+		this.asientosTotales = asientosTotales;
+		this.asientosLibres = asientosLibres;
 		this.aerolinea = aerolinea;
 		this.salida = salida;
 		this.llegada = llegada;
 	}
+	
+	public Vuelo() {
+		super();
+	}
 
-
-	public String getCodigo_de_vuelo() {
-		return codigo_de_vuelo;
+	public String getcodigoDeVuelo() {
+		return codigoDeVuelo;
 	}
 
 
-	public void setCodigo_de_vuelo(String codigo_de_vuelo) {
-		this.codigo_de_vuelo = codigo_de_vuelo;
+	public void setcodigoDeVuelo(String codigoDeVuelo) {
+		this.codigoDeVuelo = codigoDeVuelo;
 	}
 
 
 	public int getFecha_y_hora_de_salida() {
-		return fecha_y_hora_de_salida;
+		return fechaYHoraDeSalida;
 	}
 
 
-	public void setFecha_y_hora_de_salida(int fecha_y_hora_de_salida) {
-		this.fecha_y_hora_de_salida = fecha_y_hora_de_salida;
+	public void setFechaYHoraDeSalida(int fechaYHoraDeSalida) {
+		this.fechaYHoraDeSalida = fechaYHoraDeSalida;
 	}
 
 
-	public int getFecha_y_hora_de_llegada() {
-		return fecha_y_hora_de_llegada;
+	public int getFechaYHoraDeLlegada() {
+		return fechaYHoraDeLlegada;
 	}
 
 
-	public void setFecha_y_hora_de_llegada(int fecha_y_hora_de_llegada) {
-		this.fecha_y_hora_de_llegada = fecha_y_hora_de_llegada;
+	public void setfechaYHoraDeLlegada(int fechaYHoraDeLlegada) {
+		this.fechaYHoraDeLlegada = fechaYHoraDeLlegada;
 	}
 
 
-	public int getAsientos_totales() {
-		return asientos_totales;
+	public int getasientosTotales() {
+		return asientosTotales;
 	}
 
 
-	public void setAsientos_totales(int asientos_totales) {
-		this.asientos_totales = asientos_totales;
+	public void setasientos_totales(int asientosTotales) {
+		this.asientosTotales = asientosTotales;
 	}
 
 
-	public int getAsientos_libres() {
-		return asientos_libres;
+	public int getasientosLibres() {
+		return asientosLibres;
 	}
 
 
-	public void setAsientos_libres(int asientos_libres) {
-		this.asientos_libres = asientos_libres;
+	public void setasientosLibres(int asientosLibres) {
+		this.asientosLibres = asientosLibres;
 	}
 
 
